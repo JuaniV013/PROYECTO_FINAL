@@ -1,0 +1,13 @@
+{
+    "name": "Prueba",
+    "runtime": "python3.7",
+    "dependencies": {
+      "python": {
+        "fastapi": "^0.68.0",
+        "uvicorn": "^0.15.0"
+      }
+    },
+    "commands": {
+      "api": "uvicorn main:app --reload"
+    }
+}
