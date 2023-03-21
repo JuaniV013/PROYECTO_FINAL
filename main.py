@@ -2,14 +2,12 @@ from fastapi import FastAPI
 import pandas as pd
 import mysql.connector
 from collections import Counter
-from deta import Deta
+
 
 app = FastAPI()
 
 # Cargar los datos a un dataframe
 df = pd.read_csv("data.csv")
-deta = Deta("e0cz2sltxpa_QU1946uT44Dvz8zmfzGtBiu8DHDAFi2y")
-drive = deta.Drive("date")
 
 
 # Definir la estructura del endpoint
